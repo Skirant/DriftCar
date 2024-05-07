@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
+//Скрипт двигает текстуру земли создавая эффект движения по ней
 public class CreationEarth : MonoBehaviour
 {
     public Transform cameraHolder;
     public Transform playerObject;
     internal Transform miniMap;
     public Transform groundObject;
+
+    public LayerMask groundLayer;
 
     internal float cameraRotate = 0;
     public float groundTextureSpeed = 0;
